@@ -23,6 +23,11 @@ pip install textsplitter
 Here's a simple example of how to use the TextSplitter:
 
 ```python
+
+import nltk
+nltk.download('stopwords')
+nltk.download('punkt')
+
 from textsplitter import TextSplitter
 
 sample_text = "Your sample text goes here..."

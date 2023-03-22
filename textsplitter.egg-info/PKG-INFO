@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: textsplitter
+Version: 1.0.3
+Summary: A Python library to split large text into smaller chunks based on the maximum token size and other criteria
+Home-page: https://github.com/rjarun8/textsplitter.git
+Author: Raj Arun
+Author-email: rjarun8@example.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Text Splitter
+
+A Python library to split large text into smaller chunks based on the maximum token size and other criteria.
+
+## Features
+
+- Split text into smaller chunks based on maximum token size
+- End chunks at sentence boundaries
+- Preserve formatting
+- Remove URLs
+- Replace entities
+- Remove stopwords
+
+## Installation
+
+To install the library, run the following command:
+
+pip install textsplitter
+
+
+## Usage
+
+Here's a simple example of how to use the TextSplitter:
+
+```python
+from textsplitter import TextSplitter
+
+sample_text = "Your sample text goes here..."
+
+text_splitter = TextSplitter(max_token_size=20, end_sentence=True, preserve_formatting=True,
+                             remove_urls=True, replace_entities=True, remove_stopwords=True, language='english')
+
+chunks = text_splitter.split_text(sample_text)
+
+for i, chunk in enumerate(chunks):
+    print(f"Chunk {i + 1}:\n{chunk}")
+
+

@@ -1,0 +1,9 @@
+README.md
+setup.py
+textsplitter/__init__.py
+textsplitter/textsplitter.py
+textsplitter.egg-info/PKG-INFO
+textsplitter.egg-info/SOURCES.txt
+textsplitter.egg-info/dependency_links.txt
+textsplitter.egg-info/requires.txt
+textsplitter.egg-info/top_level.txt
